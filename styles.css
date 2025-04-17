@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.hero {
+  height: 80vh;
+  background: url('https://source.unsplash.com/featured/?fashion') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 48px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  letter-spacing: 4px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 40px;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.categories a:hover {
+  border-color: #111;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.product {
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.product h2 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.product p {
+  color: gray;
+  font-size: 14px;
+}
